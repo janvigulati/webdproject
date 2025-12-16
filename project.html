@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyBuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #96cafe;
+            display: flex;
+        }
+
+        /* SIDE MENU */
+        .side-menu {
+            width: 220px;
+            background: #222;
+            color: #fff;
+            min-height: 100vh;
+            padding-top: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .side-menu h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .side-menu a {
+            display: block;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .side-menu a:hover {
+            background: #96cafe;
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            margin-left: 220px;
+            width: calc(100% - 220px);
+            padding: 20px 0;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-box {
+            width: 42px;
+            height: 42px;
+            background: #fff;
+            color: #000;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(to right, #000, #333);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 35px;
+        }
+
+        .hero button {
+            padding: 12px 28px;
+            border: none;
+            background: white;
+            color: rgb(0, 0, 0);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 40px 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            padding: 8px 16px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="side-menu">
+    <h2>Menu</h2>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Categories</a>
+    <a href="#">Deals</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="main-content">
+    <header>
+        <div class="logo">
+            <div class="logo-box">EB</div>
+            <h2>EasyBuy</h2>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Shop Smart. Shop Easy.</h1>
+        <p>Your everyday products at one click</p>
+        <button>Start Shopping</button>
+    </section>
+
+    <section class="products">
+        <div class="product-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p class="price">₹14,999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="pexels-soulful-pizza-2080276-3780681.jpg" alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p class="price">₹1,799</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80" alt="Camera">
+                <h3>Camera</h3>
+                <p class="price">₹32,499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="Shoes">
+                <h3>Sports Shoes</h3>
+                <p class="price">₹2,499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="pexels-jibarofoto-3731256.jpg" alt="Backpack">
+                <h3>Backpack</h3>
+                <p class="price">₹1,299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="pexels-goumbik-574073.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p class="price">₹49,999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+<img src="pexels-olenkabohovyk-1772123.jpg">
+<h3>Keyboard</h3>
+<p class="price">₹999</p>
+<button>Add to Cart</button>
+</div>
+<div class="card">
+<img src="pexels-anna-nekrashevich-8532616.jpg">
+<h3>T-shirt</h3>
+<p class="price">₹799</p>
+<button>Add to Cart</button>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>EasyBuy</strong> – Your Trusted Online Store</p>
+        <p>© 2025 EasyBuy. All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
